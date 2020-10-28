@@ -1,38 +1,142 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(42, 119, 182);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.LogoSection {
+  background: transparent;
+  height: 50px;
+  width: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.SiteLogo {
+  width: 82px;
+  height: 50px;
+  margin-top: 2px;
+}
+
+.MainContent {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+  /* background-image: url("./bg.png"); */
+  background-color: rgb(177, 101, 101);
+  height: auto;
+  width: 100%;
+  padding: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.ServicesLogo {
+  width: 100px;
+  height: 100px;
+  animation: MyLogo 3s infinite linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes MyLogo {
+  0% {
+    transform: translateY(0);
+
+    opacity: 0;
   }
-  to {
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(80vh);
+
+    opacity: 0;
+  }
+}
+
+.MainContent > h3,
+.MainContent > p {
+  text-align: left;
+}
+
+/* content */
+.Services {
+  width: 100px;
+  height: 100px;
+  animation: Services 3s infinite linear;
+}
+@keyframes Services {
+  0% {
+    transform: translateX(0);
+
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80vh);
+
+    opacity: 0;
+  }
+}
+/* Header */
+@keyframes example {
+  0% {
+    background-color: transparent;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: transparent;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: transparent;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: transparent;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: transparent;
+    left: 0px;
+    top: 0px;
+  }
+}
+.Header {
+  width: 300px;
+  height: 300px;
+  animation: Header 5s infinite linear;
+}
+@keyframes Header {
+  0% {
+    transform: rotate(0deg);
+
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
     transform: rotate(360deg);
+
+    opacity: 0;
   }
 }
